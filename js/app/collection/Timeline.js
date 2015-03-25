@@ -1,6 +1,4 @@
-//Dealing with the connection to the server, retrieving a list of tweets each of which will be represented by a tweet object.
-
-var com || {};
+var com = com || {};
 com.apress = com.apress || {};
 com.apress.collection = com.apress.collection || {};
 

@@ -13,20 +13,19 @@
 
 <!-- Handlebars templates -->
 <script type="text/x-handlebars-template" id="timeline-template">
-<ul class='listview'>
-	{{#each tweet}}
-	<li>
-		<div class='icon'>
-			<img src='{{user.profile_image_url}}'></img>
-		</div>
-			<div class='data'>
-				<h4>{{user.name}}</h4>
-
-				<p>{{text}}</p>
-			</div>
-		</li>
-		{/each}}
-	</ul>
+ <ul class='listview'>
+        {{#each tweet}}
+        <li>
+          <div class='icon'>
+                  <img src='{{user.profile_image_url}}'></img>
+            </div>
+            <div class='data'>
+                <h4>{{user.name}}</h4>
+                <p>{{text}}</p>
+            </div>
+</li>
+        {{/each}}
+    </ul>
 </script>
 
 <!-- External library Includes -->

@@ -44,3 +44,19 @@ app.use(express.bodyParser());
 
 //start up the app on port 8080
 app.listen(8080);
+
+/**
+* Returns the twitter timeline for the current user
+**/
+app.get('/timeline', function (request, response) {
+
+	response.header('Access-Control-Allow-Origin', '*');
+		client.get('statuses/home_timeline' { }, function (err, reply) {
+			if(err) {
+				response.send(404);
+			}
+			if(reply) {
+				response.json(reply);
+			}
+		});
+			});	
